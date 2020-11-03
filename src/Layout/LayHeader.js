@@ -4,7 +4,6 @@ import '../index.css';
 import logoImage from '../res/logo.png'
 import { Layout, Menu } from 'antd';
 import {Link} from 'react-router-dom';
-import LangLib from "../lang/kor";
 import { useTranslation } from 'react-i18next';
 const { Header } = Layout;
 

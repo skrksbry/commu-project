@@ -1,104 +1,49 @@
 import React, { Component, useState, useEffect } from 'react';
-import Layheader from './Layout/LayHeader';
+import LayTopBanner from './Layout/LayTopBanner';
 import 'antd/dist/antd.css';
 import './index.css';
 import Fade from "react-reveal/Fade";
-import { Layout, Card, Space } from 'antd';
-import Routers from "./Routes/Router";
+import banner2 from "./res/testBanner.jpg";
+import { Layout,Row, Card, Space, Timeline } from 'antd';
+import { useTranslation } from 'react-i18next'
 
 const { Content, Footer } = Layout;
+const pagename = "about";
 
 function About() {  
+  const { t , i18n } = useTranslation('lang', { useSuspense: false });
   return (
       <Layout className="layout">
+        <LayTopBanner title={t(pagename)} />
         <Content style={{ padding: '0 50px' }}>
           <div className="site-layout-content">
-            <Space direction="vertical">
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p> 
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
-              </Fade>
-              <Fade left>
-                <Card title="Card" style={{ width: 300 }}>
-                  <p>Card content</p>
-                  <p>Card content</p>
-                </Card>
+          <Row>
+            <Space direction="vertical" style={{ textAlign: "center" , width: "100%"}}>
+              <Fade>
+              <Timeline mode="left">
+                <Timeline.Item label="2015-09-01">{t("test-comment")}</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                <Timeline.Item>{t("test-comment")}</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+              </Timeline>
               </Fade>
             </Space>
+          </Row>
             
           </div>
           
