@@ -32,7 +32,6 @@ function LayHeader ()  {
                 </Header>
                 
         );
-        console.log(t("home"));
 }
 
 export default LayHeader;

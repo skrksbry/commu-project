@@ -3,7 +3,6 @@ import LayTopBanner from './Layout/LayTopBanner';
 import 'antd/dist/antd.css';
 import './index.css';
 import Fade from "react-reveal/Fade";
-import banner2 from "./res/testBanner.jpg";
 import { Layout,Row, Card, Space, Timeline } from 'antd';
 import { useTranslation } from 'react-i18next'
 
@@ -19,29 +18,42 @@ function About() {
           <div className="site-layout-content">
           <Row>
             <Space direction="vertical" style={{ textAlign: "center" , width: "100%"}}>
-              <Fade>
+            <Fade cascade>
               <Timeline mode="left">
-                <Timeline.Item label="2015-09-01">{t("test-comment")}</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
-                <Timeline.Item>{t("test-comment")}</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-                <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
-              </Timeline>
-              </Fade>
+                
+                  <Timeline.Item label="2015-09-01">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item>{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">Network problems being solved</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+                  <Timeline.Item label="2015-09-01 09:12:11">{t("test-comment")}</Timeline.Item>
+
+              </Timeline> 
+            </Fade>
             </Space>
           </Row>
             

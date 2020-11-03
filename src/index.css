@@ -29,6 +29,10 @@
   width:100%;
   position: relative;
 }
+.site-product-cards {
+  padding:10px;
+  margin:13px;
+}
 
 .slick-slide h3 {
   color: #fff;
@@ -42,6 +46,7 @@
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .site-top-bg{
+  margin-top:2px;
   height:240px;
 }
 .site-page-title{
