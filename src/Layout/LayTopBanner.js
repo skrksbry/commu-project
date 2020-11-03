@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React from 'react';
 import 'antd/dist/antd.css';
 import banner2 from "../res/testBanner.jpg";
 import Fade from "react-reveal/Fade";

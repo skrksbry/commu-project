@@ -6,6 +6,7 @@ import { Layout, Menu } from 'antd';
 import {Link} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 const { Header } = Layout;
+const { SubMenu } = Menu;
 
 
 
@@ -27,7 +28,16 @@ function LayHeader ()  {
                         <Menu.Item key="1"><Link to="/">{t("home")}</Link></Menu.Item>
                         <Menu.Item key="2"><Link to="/About">{t('about')}</Link></Menu.Item>
                         <Menu.Item key="3"><Link to="/Product">{t('product')}</Link></Menu.Item>
-                        
+                        <SubMenu key="SubMenu" title={t('business-areas')}>
+                            <Menu.ItemGroup title={t('business-robot')}>
+                                <Menu.Item key="setting:1">{t('business-robot-fst')}</Menu.Item>
+                                <Menu.Item key="setting:2">{t('business-robot-sec')}</Menu.Item>
+                            </Menu.ItemGroup>
+                            <Menu.ItemGroup title={t('business-robot')}>
+                                <Menu.Item key="setting:1">{t('business-robot-fst')}</Menu.Item>
+                                <Menu.Item key="setting:2">{t('business-robot-sec')}</Menu.Item>
+                            </Menu.ItemGroup>
+                        </SubMenu>
                     </Menu>
                 </Header>
                 
