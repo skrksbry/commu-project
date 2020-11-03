@@ -3,6 +3,8 @@
     "about": "소개",
     "product": "제품",
     "banner_1": "배너 테스트1",
-    "banner_2": "배너 테스트2"
+    "banner_2": "배너 테스트2",
+    "page-not-found": "페이지를 찾을수 없습니다",
+    "go-to-main": "메인으로 돌아가기"
     
 }
