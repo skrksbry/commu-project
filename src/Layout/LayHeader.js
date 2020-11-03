@@ -4,13 +4,14 @@ import '../index.css';
 import logoImage from '../res/logo.png'
 import { Layout, Menu } from 'antd';
 import {Link} from 'react-router-dom';
-import { Home, About, Board} from '../Routes/index'; 
-
+import LangLib from "../lang/kor";
+import { useTranslation } from 'react-i18next';
 const { Header } = Layout;
 
 
-class LayHeader extends Component {
-    render() {
+
+function LayHeader ()  {
+        const { t , i18n } = useTranslation('lang', { useSuspense: false });
         return (
             
                  <Header>
@@ -22,14 +23,17 @@ class LayHeader extends Component {
                         alt='logo'
                         />
                     </div>
+                    
                     <Menu theme="white" mode="horizontal" defaultSelectedKeys={['1']}>
-                        <Menu.Item key="1"><Link to="/">Home</Link></Menu.Item>
-                        <Menu.Item key="2"><Link to="/About">About</Link></Menu.Item>
-                        <Menu.Item key="3"><Link to="/Product">Product</Link></Menu.Item>
+                        <Menu.Item key="1"><Link to="/">{t("home")}</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to="/About">{t('about')}</Link></Menu.Item>
+                        <Menu.Item key="3"><Link to="/Product">{t('product')}</Link></Menu.Item>
+                        
                     </Menu>
                 </Header>
+                
         );
-    }
+        console.log(t("home"));
 }
 
 export default LayHeader;
